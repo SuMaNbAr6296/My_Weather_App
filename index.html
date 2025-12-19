@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Weather App</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="clear">
+
+    <div class="app">
+
+        <header class="app-header">
+            <div>
+                <h1>Weather</h1>
+                <p class="subtitle">Real-time forecast</p>
+            </div>
+            <button id="themeToggle" class="theme-toggle">☀️</button>
+        </header>
+
+        <div class="search-box">
+            <input type="text" id="cityInput" placeholder="Enter city name" />
+            <button onclick="getWeather()">Search</button>
+            <button class="secondary" onclick="getCurrentLocationWeather()">Current Location📍</button>
+        </div>
+
+        <!-- Current Weather -->
+        <section id="weatherResult" class="weather-card"></section>
+
+        <!-- Forecast -->
+        <section class="forecast-section">
+            <h2>Including 5-Day Forecast</h2>
+            <div id="forecastResult" class="forecast-grid"></div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
